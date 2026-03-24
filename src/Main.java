@@ -1,21 +1,33 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     static void main() {
-        System.out.println("--Mission 1--");
+        System.out.println("--Mission 2--");
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Entrez votre prenom : ");
-        String prenom = sc.nextLine();
+        ArrayList<Float> notes = new ArrayList<Float>();
 
-        System.out.println("Entrez votre nom : ");
-        String nom = sc.nextLine();
+        notes.add(12.5F);
+        notes.add(13.0F);
+        notes.add(15.0F);
+        notes.add(12.0F);
+        notes.add(15.0F);
+        notes.add(16.0F);
 
-        System.out.println("Entrez votre annee de naissance : ");
-        int anneeDeNaissance = sc.nextInt();
+        int taille = notes.size();
 
-        int age = 2026 - anneeDeNaissance;
+        //Affichage avec boucle for :
+        for(int i=0; i<taille;i++){
+            System.out.println("La note d'indice "+i+" est de : "+notes.get(i));
+        }
 
-        System.out.println(prenom+" "+nom+" a "+age+" ans.");
+        //Affichage avec boucle while :
+        int i = 0;
+        while(i<taille){
+            System.out.println("La note d'indice "+i+" est de : "+notes.get(i));
+            i++;
+        }
+
     }
 }
