@@ -25,6 +25,11 @@ public class Main {
 
         System.out.println("La moyenne de l'étudiant est de : "+moyenne+"/20.");
 
-
+        if(moyenne>=10){
+            System.out.println("Eleve admis.");
+        }
+        else{
+            System.out.println("Eleve non admis.");
+        }
     }
 }
