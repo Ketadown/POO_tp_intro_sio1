@@ -24,13 +24,18 @@ public class Main {
 
         System.out.println("La moyenne de l'étudiant est de : "+moyenne+"/20.");
 
-        if(moyenne>=15){
-            System.out.println("Très bon résultat");
+        if(moyenne>=10){
+            System.out.println("Étudiant admis");
+            if(moyenne>=15){
+                System.out.println("Très bon résultat");
+            }
+            else if(moyenne<=15 && moyenne>=10){
+                System.out.println("Résultat satisfaisant.");
+            }
         }
-        else if(moyenne<=15 && moyenne>=10){
-            System.out.println("Résultat satisfaisant.");
-        }
+
         else{
+            System.out.println("Étudiant non admis");
             System.out.println("Résultat insatisfaisant.");
         }
     }
