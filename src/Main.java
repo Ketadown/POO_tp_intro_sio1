@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
     static void main() {
-        System.out.println("--Mission 3--");
+        System.out.println("--Mission 5--");
 
         ArrayList<Float> notes = new ArrayList<Float>();
 
@@ -16,7 +16,6 @@ public class Main {
         int taille = notes.size();
         float somme = 0;
 
-        //Affichage avec boucle for :
         for(int i=0; i<taille;i++){
             somme = somme + notes.get(i);
         }
@@ -25,11 +24,14 @@ public class Main {
 
         System.out.println("La moyenne de l'étudiant est de : "+moyenne+"/20.");
 
-        if(moyenne>=10){
-            System.out.println("Eleve admis.");
+        if(moyenne>=15){
+            System.out.println("Très bon résultat");
+        }
+        else if(moyenne<=15 && moyenne>=10){
+            System.out.println("Résultat satisfaisant.");
         }
         else{
-            System.out.println("Eleve non admis.");
+            System.out.println("Résultat insatisfaisant.");
         }
     }
 }
