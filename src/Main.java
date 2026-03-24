@@ -1,10 +1,8 @@
-import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
     static void main() {
-        System.out.println("--Mission 2--");
-        Scanner sc = new Scanner(System.in);
+        System.out.println("--Mission 3--");
 
         ArrayList<Float> notes = new ArrayList<Float>();
 
@@ -16,18 +14,17 @@ public class Main {
         notes.add(16.0F);
 
         int taille = notes.size();
+        float somme = 0;
 
         //Affichage avec boucle for :
         for(int i=0; i<taille;i++){
-            System.out.println("La note d'indice "+i+" est de : "+notes.get(i));
+            somme = somme + notes.get(i);
         }
 
-        //Affichage avec boucle while :
-        int i = 0;
-        while(i<taille){
-            System.out.println("La note d'indice "+i+" est de : "+notes.get(i));
-            i++;
-        }
+        float moyenne = somme/taille;
+
+        System.out.println("La moyenne de l'étudiant est de : "+moyenne+"/20.");
+
 
     }
 }
